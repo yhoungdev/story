@@ -12,6 +12,7 @@
                 <Container>
                         <div className="text-center">
                             <div>
+
                             <img src={splash} alt="" className='img text-center'/>
                         </div>
                         <div className="text-part mt-5">
@@ -19,6 +20,7 @@
                             <span>
                                 <p>Inspire people with your story , Make them feel they can do it, by inspiring them with your  </p>
                             </span>
+
 
                             <Link to='/Main'>
                              <Button className='proceed'>PROCEED</Button>

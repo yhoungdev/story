@@ -6,10 +6,24 @@
 :root {
   --primary:#3742FA;
   --dark:#2934E1;
-  --shade:#7B7B7B;
+  --shade:#7B7B7B; 
   --glass:#212AC6;
 }
-
+  header {
+    padding: 0.5em 2em;
+  }
+  header div {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    justify-content: space-between;
+ 
+  }
+  .post {
+    background-color: var(--glass);
+  }
 .splash {
   width: 100vw;
   height: 100vh;
@@ -21,6 +35,7 @@
   flex-direction: column;
 
 }
+
 .img {
   width: 50%;
 
@@ -30,20 +45,72 @@
   border: none !important;
   outline: none;
 }
+.user-datail{
+  display: flex;
+  justify-content: space-between;
+ 
+}
+.post form {
+  display: flex;
+  max-width: 100%;
+}
+.post form button {
+  position: absolute;
+  
+}
+
 
 
 /* mobile view  */
 @media screen and (max-width:720px) {
+
   .splash {}
   .splash img {
     width:50%;
   }
+  .user-datail span {
+    display: inline-flex;
+    
+  }
+
+  .left , .right {
+    display: none;
+  }
+  /* make the top bar fixed */
+  .middle-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    padding: 1em 1em;
+    
+  }
+  .middle-top   .upper {
+    display: none;
+  }
+  .middle-top > span {
+   
+    display: flex;
+    justify-content: space-between;
+     padding: 0.5em 1.5em;
+    
+    
+  }
+    .menu {
+    float: right;
+  }
+
+
 
 }
  /* desktop vesion */
- @media screen and (min-width:720px) {
+ @media screen and (min-width:721px) {
   .splash img {
     width:30%;
+  }
+  .menu {
+    display: none;
   }
 
  }

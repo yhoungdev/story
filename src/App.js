@@ -4,6 +4,8 @@ import './App.css';
 import Splash from './components/splash'
 import Error from './components/error'
 import Main from './components/main'
+import Setting from './components/settings'
+import Top from './components/header'
 
 import { BrowserRouter as Router , Switch , Route} from 'react-router-dom'
 import {Button} from 'reactstrap'
@@ -14,7 +16,8 @@ function App() {
       <Router>
         <Switch>
             <Route exact path='/' component={Splash}/>
-            <Route path='/main' component={Main}/>
+            <Route path='/main' component={Main}/> 
+            <Route path='/settings' component={Setting}/>
             <Route component={Error}/>
         </Switch>
       </Router>
