@@ -7,7 +7,7 @@ const Main= props => {
         <>
            <section>
            <Col >
-                lorem
+                lore
              </Col>
             <Col >
                 lorem 
