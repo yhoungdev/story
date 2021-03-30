@@ -1,4 +1,5 @@
 import React from 'react';
+import {BiMenu} from 'react-icons/bi'
 const Top= props => {
   
     return (
@@ -10,7 +11,7 @@ const Top= props => {
                     </span>
 
                     <span>
-                        <h6>icons</h6>
+                        <h6><BiMenu/></h6>
                     </span>
                    </div>
              </header>

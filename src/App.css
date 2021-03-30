@@ -9,6 +9,27 @@
   --shade:#7B7B7B; 
   --glass:#212AC6;
 }
+.post-part {
+  
+}
+.stories {
+
+  padding: 1em;
+  max-width: 100%;
+  box-shadow: 1px 2px 13px #80808042;
+  margin-bottom: 2em;
+  border-radius: 5px 5px 5px 5px;
+}
+.icon {
+  
+  cursor: pointer;
+}
+.camera {
+  cursor: pointer;
+}
+.cam-card {
+  padding: 2em;
+}
   header {
     padding: 0.5em 2em;
   }
@@ -22,8 +43,11 @@
  
   }
   .post {
-    background-color: var(--glass);
+
+    border-radius:0.5em ;
+    margin-left: 0.2em;
   }
+ 
 .splash {
   width: 100vw;
   height: 100vh;
@@ -50,12 +74,17 @@
   justify-content: space-between;
  
 }
+
 .post form {
   display: flex;
   max-width: 100%;
+  margin-top: 1em;
 }
 .post form button {
-  position: absolute;
+  position: relative;
+  right: 0;
+  z-index: 1;
+
   
 }
 
@@ -68,6 +97,31 @@
   .splash img {
     width:50%;
   }
+  .side {
+    background-color: #090b38b2;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    width: 15em;
+    z-index: 1;
+  }
+  .side div {
+    display: flex;
+    justify-content: center;
+    
+    
+  }
+  .side ul {
+    list-style-type: none;
+    font-weight: bold;
+    
+  }
+  .side ul li {
+    text-transform: uppercase;
+    color: #fff;
+  }
+
   .user-datail span {
     display: inline-flex;
     
@@ -110,6 +164,9 @@
     width:30%;
   }
   .menu {
+    display: none;
+  }
+  .sidebar {
     display: none;
   }
 
