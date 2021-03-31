@@ -6,19 +6,25 @@ import Setting from './settings';
 import {BiMenu} from 'react-icons/bi';
 import {FiMenu, FiMoreHorizontal, FiSearch} from 'react-icons/fi';
 import {buger} from 'react-icons/di';
-import Post from './post'
-import Sidebar from './sidebar'
+import Post from './post';
+import Sidebar from './sidebar';
+
 
  
 const Main= props => {
  
     const [name, setName]=useState('John Doe ')
- 
+    const [hide, setHide]=useState('none')
+
+    //let hide the sidebar when the body is being clicked
+   
     return (
         <>
           {/* split the screen into three */}
-          <Container>
-           <Sidebar/>
+          <Container >
+           <div className='theSide' style={{display:hide}}>
+             <Sidebar first='HOME' second='SETTINGS' third='MORE'/>
+           </div>
                 <div className='contents'>
                 <Row>
                   {/* left part */}
@@ -43,7 +49,7 @@ const Main= props => {
                             
                              <span>
                                  <h4><FiSearch/></h4>
-                                 <h4 className='icon'><BiMenu/></h4>
+                                 <h4 className='icon' onClick={e=>setHide('block')}><BiMenu/></h4>
                              </span>
                           </div>
                       </div>

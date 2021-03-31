@@ -4,13 +4,13 @@ import Top from './header'
 import {AiFillCamera} from 'react-icons/ai'
 const Setting=props=>{
     const [theuser, setTheuser]=useState();
-
+  
     return (
         <>
-            <Container>
+            <Container >
 
-                <Top page='SETTINGS' style={{padding:"2em"}}/>
-            <Breadcrumb>
+                <Top page='SETTINGS' />
+            <Breadcrumb className='mt-3'>
                 <Card>
                     <span className='text-muted'>
                         <p className='text-center'>this is the settings part , properties you make changes to here will affect the style of your account </p>
@@ -37,7 +37,9 @@ const Setting=props=>{
             </Container>
         </>
     )
+  
         
+   
 
 }
 export default Setting;

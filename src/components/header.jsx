@@ -1,5 +1,6 @@
 import React from 'react';
 import {BiMenu} from 'react-icons/bi'
+import Side from './sidebar'
 const Top= props => {
   
     return (
@@ -15,6 +16,7 @@ const Top= props => {
                     </span>
                    </div>
              </header>
+             {/* <Side first='home' second='more'/> */}
         </>
     )
    
